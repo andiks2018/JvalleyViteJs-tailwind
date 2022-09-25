@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+
+    .auth{
+        @apply w-screen h-screen flex flex-col justify-center
+        items-center bg-gradient-to-tr from-orange-600 to-orange-300
+    }
+    .auth_form {
+        @apply p-4 flex flex-col gap-4 bg-slate-100 rounded-lg
+        shadow-xl w-[300px]
+    }
+    .form_group {
+        @apply flex flex-col gap-1 font-light
+    }
+    .form_group label {
+        @apply text-slate-900
+    }
+    .form_group input {
+        @apply h-12 px-2 font-light border-[1px] rounded-lg
+    }
+    .auth_form h1{
+        @apply text-center text-2xl font-semibold
+    }
+}
